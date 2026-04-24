@@ -1,1 +1,1 @@
-Test test git hub oldu mu
+Bu proje girdiğiniz sayıyı, seçtiğiniz search algoritması ile aramaktadır.
