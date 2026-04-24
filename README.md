@@ -1,1 +1,1 @@
-Bu proje girdiğiniz sayıyı, seçtiğiniz search algoritması ile aramaktadır.
+This project search the numbers with specific search method.
