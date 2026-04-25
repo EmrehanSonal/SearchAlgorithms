@@ -8,5 +8,15 @@ public class BinarySearchAlgo
         {
             return -1;
         }
+
+        int left = 0;
+        int right = numbers.Length;
+
+        while (left <= right)
+        {
+            int mid = left + (right - left) / 2;
+
+        }
+
     }
 }
