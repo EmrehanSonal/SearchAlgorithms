@@ -26,5 +26,14 @@ public class JumpSearchAlgo
             }
         }
 
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            if (numbers[i] == target)
+            {
+                return i;
+            }
+        }
+        return -1;
+
     }
 }
