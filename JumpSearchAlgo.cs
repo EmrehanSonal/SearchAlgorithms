@@ -10,5 +10,21 @@ public class JumpSearchAlgo
             return -1;
         }
 
+        int n = numbers.Length;
+        int step =(int)Math.Sqrt(n);
+        int prev = 0;
+
+        while (prev < n && numbers[Math.Min(step, n) -1] < target)
+        {
+            prev = step;
+
+            step =+ (int)Math.Sqrt(n);
+
+            if (prev >= n)
+            {
+                return -1;
+            }
+        }
+
     }
 }
