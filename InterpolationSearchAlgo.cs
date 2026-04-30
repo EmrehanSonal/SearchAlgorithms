@@ -27,6 +27,9 @@ public class InterpolationSearchAlgo
             }
         }        
 
+        int pos = low + ((target - numbers[low])*(high - low))
+                        /(numbers[high] - numbers[low]);
+
 
         return -1;
 
