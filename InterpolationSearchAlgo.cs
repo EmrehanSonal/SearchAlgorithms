@@ -10,7 +10,22 @@ public class InterpolationSearchAlgo
             return -1;
         }
 
-        
+        int low  = 0;
+        int high = numbers.Length -1;
+
+        while (low <= high && numbers[low] <= target && numbers[high] >= target)
+        {
+            if (numbers[low] == numbers[high])
+            {
+                if (numbers[low] == target)
+                {
+                    return low;
+                }else
+                {
+                    return -1;
+                }
+            }
+        }        
 
 
         return -1;
