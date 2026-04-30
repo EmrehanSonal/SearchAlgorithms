@@ -24,5 +24,6 @@ public class ExponentialSearchAlgo
 
         int left = i / 2;
         int right = Math.Min(i, n - 1);
+        return BinarySearch(numbers, target, left, right);
     }
 }
