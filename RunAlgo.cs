@@ -32,6 +32,16 @@ public class RunAlgo
                 Console.WriteLine("Invalid choice!");
                 continue;
             }
+
+            SearchType selected = (SearchType)choice;
+
+            if (selected == SearchType.Exit)
+            {
+                Console.WriteLine("Program closed");
+                break;
+            }
+
+
         }
 
 
