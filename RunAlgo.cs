@@ -48,6 +48,40 @@ public class RunAlgo
                 continue;
             }
 
+            int result = -1;
+
+            switch (selected)
+            {
+                case SearchType.Linear:
+                    result = LinearSearchAlgo.LinearSearch(numbers, target);
+                    break;
+                case SearchType.Binary:
+                    result = BinarySearchAlgo.BinarySearch(numbers, target);
+                    break;    
+                case SearchType.Jump:
+                    result = JumpSearchAlgo.JumpSearch(numbers, target);
+                    break;
+                case SearchType.Interpolation:
+                    result = InterpolationSearchAlgo.InterpolationSearch(numbers, target);
+                    break;
+                case SearchType.Exponential:
+                    result = ExponentialSearchAlgo.ExponentialSearch(numbers, target);
+                    break;    
+
+                default:
+                    Console.WriteLine("Invalid Selection");
+                    continue;
+            }
+
+            if (result != -1)
+            {
+                Console.WriteLine($"Found at index: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Number not found.");
+            }
+
 
         }
 
