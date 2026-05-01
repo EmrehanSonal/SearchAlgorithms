@@ -12,5 +12,11 @@ public enum SearchType
 
 public class RunAlgo
 {
-    
+    public static void Main()
+    {
+        int[] numbers = { 5, 15, 31, 45, 51, 55, 60, 67, 79, 82, 97, 100, 111, 120, 150 };
+
+        
+    }
+
 }
