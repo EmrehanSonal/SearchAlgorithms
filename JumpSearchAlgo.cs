@@ -18,7 +18,7 @@ public class JumpSearchAlgo
         {
             prev = step;
 
-            step =+ (int)Math.Sqrt(n);
+            step += (int)Math.Sqrt(n);
 
             if (prev >= n)
             {

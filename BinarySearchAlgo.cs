@@ -10,7 +10,7 @@ public class BinarySearchAlgo
         }
 
         int left = 0;
-        int right = numbers.Length;
+        int right = numbers.Length -1;
 
         while (left <= right)
         {
