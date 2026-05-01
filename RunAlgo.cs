@@ -41,6 +41,13 @@ public class RunAlgo
                 break;
             }
 
+            Console.Write("Enter target number: ");
+            if (!int.TryParse(Console.ReadLine(), out int target))
+            {
+                Console.WriteLine("Invalid number");
+                continue;
+            }
+
 
         }
 
