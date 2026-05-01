@@ -25,23 +25,23 @@ public class InterpolationSearchAlgo
                     return -1;
                 }
             }
-        }        
+                
 
-        int pos = low + ((target - numbers[low])*(high - low))
+            int pos = low + ((target - numbers[low])*(high - low))
                         /(numbers[high] - numbers[low]);
 
-        if (numbers[pos] == target)
-        {
-            return pos;
+            if (numbers[pos] == target)
+            {
+                return pos;
+            }
+            if (numbers[pos] < target)
+            {
+                low = pos + 1;
+            }else
+            {
+                high = pos - 1;
+            }
         }
-        if (numbers[pos] < target)
-        {
-            low = pos + 1;
-        }else
-        {
-            high = pos - 1;
-        }
-
         return -1;
 
     }
